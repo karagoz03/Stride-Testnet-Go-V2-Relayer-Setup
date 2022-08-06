@@ -57,7 +57,7 @@ rly config init
 ```
 
 ## Create relayer configuration files
-### 1. Generate CHAIN_A config file using your own info.
+### 1. Generate CHAIN_A config file using your own rpc.
 ```
 sudo tee $HOME/.relayer/stride.json > /dev/null <<EOF
 {
@@ -79,7 +79,7 @@ sudo tee $HOME/.relayer/stride.json > /dev/null <<EOF
 EOF
 ```
 
-### 2. Generate CHAIN_B config file using variables we have defined above
+### 2. Generate CHAIN_B config file using your own rpc.
 ```
 sudo tee $HOME/.relayer/gaia.json > /dev/null <<EOF
 {
