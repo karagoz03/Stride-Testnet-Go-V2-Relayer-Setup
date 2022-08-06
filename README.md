@@ -193,9 +193,15 @@ journalctl -u relayerd -f -o cat
 ```
 ![image](https://user-images.githubusercontent.com/38834586/183264898-1d43ed07-aac9-4635-823a-50aa0ffbd536.png)
 
+## To improve relayer performance and reduce errors
+
+`sudo ufw alow from stride ip` in gaia
+`sudo ufw allow from gaia ip` in stride
+
+note: it's experimental. I'm not confident about it. But worked for me.
 
 
-Check your wallet transaction in explorer to find the GO v2 Relayer Update Client(IBC) message:
+## Check your wallet transaction in explorer to find the GO v2 Relayer Update Client(IBC) message:
 ![image](https://user-images.githubusercontent.com/38834586/183264811-037c8285-a321-4aa0-a2e2-b2343fa1024a.png)
 https://poolparty.stride.zone/STRIDE/tx/C9890158D20229766E0C1BF473865DF93033A379933BF27AA0AEE7552C0F4ED5
 
