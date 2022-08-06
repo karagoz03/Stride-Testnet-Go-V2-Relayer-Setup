@@ -4,7 +4,7 @@ An example of using GO Relayer v2 for Stride Testnet
 ## Preparation before you start
 Before setting up relayer you need to make sure you already have. (In this example, i'll use relayer between Stride and Gaia chains)
 1. Fully synchronized RPC nodes for each Cosmos project you want to connect
-2. RPC enpoints should be exposed and available from relayer instance
+2. RPC endpoints should be exposed and available from relayer instance
 #### RPC configuration is located in `config.toml` file
 # STRIDE
 `nano $HOME/.stride/config/config.toml` , find laadr and replace with laddr = `"tcp://0.0.0.0:16657"` 
