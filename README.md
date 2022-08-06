@@ -1,4 +1,3 @@
-# Stride-Testnet-Go-V2-Relayer-Setup
 # Setup GO Relayer v2 between Stride and GAIA
 An example of using GO Relayer v2 for Stride Testnet 
 
