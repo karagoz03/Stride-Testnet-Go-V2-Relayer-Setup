@@ -23,9 +23,9 @@ sed -i -e "s/^indexer *=.*/indexer = \"kv\"/" $HOME/.gaia/config/config.toml
 5. For each chain you will need to have wallets that are funded with tokens. This wallets will be used to do all relayer stuff
 # Prepare Rpc adresses for each chain. To learn your rpc, run:
 
-`"$(curl -s ifconfig.me)$(grep -A 3 "[rpc]" ~/.stride/config/config.toml | egrep -o ":[0-9]+")"` in stride,
+`echo "$(curl -s ifconfig.me)$(grep -A 3 "[rpc]" ~/.stride/config/config.toml | egrep -o ":[0-9]+")"` in stride,
 
-`"$(curl -s ifconfig.me)$(grep -A 3 "[rpc]" ~/.gaia/config/config.toml | egrep -o ":[0-9]+")"` in gaia
+`echo "$(curl -s ifconfig.me)$(grep -A 3 "[rpc]" ~/.gaia/config/config.toml | egrep -o ":[0-9]+")"` in gaia
 
 and take notes of outputs. It should be in `ip:port` format. They are your rpc addresses.
 
