@@ -57,7 +57,7 @@ rly config init
 ```
 
 ## Create relayer configuration files
-### 1. Generate CHAIN_A config file using your own rpc.
+### 1. Generate stride.json config file using your own rpc.
 ```
 sudo tee $HOME/.relayer/stride.json > /dev/null <<EOF
 {
@@ -79,7 +79,7 @@ sudo tee $HOME/.relayer/stride.json > /dev/null <<EOF
 EOF
 ```
 
-### 2. Generate CHAIN_B config file using your own rpc.
+### 2. Generate gaia.json config file using your own rpc.
 ```
 sudo tee $HOME/.relayer/gaia.json > /dev/null <<EOF
 {
@@ -87,7 +87,7 @@ sudo tee $HOME/.relayer/gaia.json > /dev/null <<EOF
   "value": {
     "key": "wallet",
     "chain-id": "GAIA",
-    "rpc-addr": "http://217.160.207.56:26657",
+    "rpc-addr": "http://212.111.42.226:23657",
     "account-prefix": "cosmos",
     "keyring-backend": "test",
     "gas-adjustment": 1.2,
